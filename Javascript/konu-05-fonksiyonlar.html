@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript fonksiyonlar</title>
+</head>
+<body>
+    <h1>javascript fonksiyonlar</h1>
+    <script>
+        // fonksiyon tanımlama  
+        function fonksiyonAdi(parametre){
+            console.log('fonksiyona gönderilen değer : ', parametre )
+        }
+        // fonksiyon çağırma 
+        fonksiyonAdi("javascript fonksiyon çağırma")
+        // örnek 2 void metot: geriye değer döndürmeyen 
+        function toplamaYap(sayi1, sayi2){
+            console.log('Sayıların Toplamı ', sayi1 + sayi2)
+        }
+        toplamaYap(10, 8)
+        // örnek 3 geriye değer döndüren metot
+        function cikarmaYap(sayi1, sayi2){
+            return sayi1 - sayi2;
+        }
+        console.log('çıkarma sonucu : ', cikarmaYap(36, 18))
+        
+        // örnek 4 : sayfa arkaplan rengini ve yazı rengini değiştirme 
+        function RenkDegistir(arkaplanRengi, yaziRengi){
+            document.bgColor= arkaplanRengi;
+            document.fgColor= yaziRengi;
+
+        }
+        RenkDegistir("red", "white")
+          console.log('Pencere Genişliği ', window.innerWidth)
+          console.log('Pencere Yüksekliği ', window.innerHeight)
+
+          console.log('Pencere Genişliği(outerWidht) ', window.outerWidth)
+          console.log('Pencere Yüksekliği(outerHeight) ', window.outerHeight)
+    </script>
+</body>
+</html>

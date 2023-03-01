@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sekme Başlığı </title>
+</head>
+<body>
+   Anasayfa 
+   <br> 
+   Html Elementleri
+   <br>
+   Başlık Elementleri
+   <h1>h1 en büyük html başlık elementidir. Ana başlık olarak kullanılır</h1>
+   <h2>h2 elementi sayfada alt başlık oluşturmak için kullanılır</h2>
+   <h3>h3 h2 nin alt başlığı olarak kullanılabilir</h3>
+   <h4>h4 başlığı daha küçük başlık oluşturur</h4>
+    <h5>h5 başlık elementi</h5>
+    <h6>h6 başlık elementi en küçük boyutlu olandır</h6>
+
+    <p>p elementi sayfada paragraf yazıları göstermek için kullanılır</p>
+
+    <div>div elementi sayfada bölümler oluşturmak için kullanılır</div>
+
+    <hr>
+    <div>hr eleneti sayfada yatay çizgi çeker 
+    <br>
+    br ise içeriği alt satıra geçirir
+
+    </div>
+    <h3>a elementi ile sayfada link-bağlantı oluşturma</h3>
+    <a href="/ders01HTML.html" title="Anasayfaya Git"> 
+
+        Anasayfa
+    </a>
+    <br>
+    <a href="https://www.google.com.tr/?hl=tr">Google'a Git
+    </a>
+    <br>
+    <a href="https://www.google.com.tr/?hl=tr" target="_blank"> Google'ı Yeni Sekmede Aç</a>
+    
+    
+    <h3>Sayfada Resim Gösterme</h3>
+    <img src="Images\limon.jpg" alt="alternatif yazı resim yoksa ekranda görünür" width="250">
+    <img src="Images\peynir.jpg" alt="" width="250" height="">
+
+    <h3>Table Elementi ile Ekranda Excel Tarzında Veri Gösterme </h3>
+
+    <table>
+        <tr>
+            <td>
+                tablo > tr (satır) > td (sütun)
+            </td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td>
+                tabloda border kullanırsak çerçevelerin ekranda görünmesini sağlayabiliriz
+           </td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <td> Satırdaki Sol Kolon</td>
+            <td>Satırdaki Sağ Kolon</td>
+            
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <td> Satırdaki Sol Kolon</td>
+            <td>Satırdaki Sağ Kolon</td>
+            <td>3.kolon</td>
+            <td>4.kolon</td>
+            <td>5.kolon</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <td> Satırdaki Sol Kolon</td>
+            <td>Satırdaki Sağ Kolon</td>
+            <td>3.kolon</td>
+            <td>4.kolon</td>
+            <td>5.kolon</td>
+        </tr>
+        <tr>
+            <td> 2.Satırdaki Sol Kolon</td>
+            <td>2.Satırdaki Sağ Kolon</td>
+            <td>2.3.kolon</td>
+            <td>2.4.kolon</td>
+            <td>5.kolon</td>
+        </tr>
+    </table>
+    <h3> Tablolarda Satır ve Sütun Birleştirme</h3>
+    <table border="1">
+        <caption>
+            caption ile tablo başlığı 
+        </caption>
+        <tr>
+            <th rowspan="3">
+                Ürün Bilgileri :
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Ürün Adı :
+            </th>
+            <td>
+                Asus Laptop
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="2">
+                rowspan özelliği ile kaç satırlık yükseklik vermek istersek o kadar değer veriyoruz
+            </th>
+            <td>
+                <img src="Images\sut.jpg" alt="" height="100">
+            </td>
+        </tr>
+    </table>
+    <h3> Colspan ile Sütun(Kolon- td) Birleştirme</h3>
+    <table border="1">
+        <tr>
+            <th>
+                Ürün Adı :
+            </th>
+            <td>
+                Klavye
+            </td>
+         <th>
+         Özelliği
+        </th>
+         <td>
+            RGB ışıklı ve renkli
+         </td>   
+        </tr>
+        <tr>
+            <th >
+                Ürün Resmi :
+            </th>
+            <td colspan="3">
+                <img src="Images\somon.jpg" alt="3 kolonluk yer kaplasın" width="250">
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <i>Html i elementi ile italik yazı yazdırabiliriz</i>
+    <br>
+    <em>em elementi ile de italik yazı yazdırabiliriz</em>
+    <br>
+    <b> b elementi ile kalın yazı yazdırabiliriz</b>
+    <br>
+    <strong>strong elementi ile de kalın yazdırabiliriz</strong>
+    <br>
+    <h2>Html de <small> small</small> elementi ile bir yazıyı olması gerekenden küçük gösterebiliriz</h2>
+    <p>sub Html elementi ile <sub>alt </sub> çıkıntılı metin oluşturabiliriz</p>
+    <p>sup Html elementi ile <sup>üst </sup> çıkıntılı metin oluşturabiliriz</p>
+    <p>Hava 4 <sup>o </sup>C</p>
+
+    <h3> Html de liste elementleri</h3>
+    <h4>sırasız liste -Ul</h4>
+    <ul>
+        <li>unordered Html list</li>
+        <li>sırasız liste oluşturmak için</li>
+        <li>ul ve li şeklinde yazılır.</li>
+        <li>özellikle menülerde kullanılır </li>
+    </ul>
+    <h4>sıralı liste -ol </h4>
+    <ol>
+        <li>Klavye</li>
+        <li>Mouse</li>
+        <li>Monitör</li>
+    </ol>
+    <hr>
+    <h3>Fieldset elementi</h3>
+    <fieldset>
+        <legend>
+            Kullanıcı Girişi
+        </legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Kullanıcı Adı :</td>
+                    <td><input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Parola :</td>
+                    <td><input type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td colspan="2">
+                        <input type="submit" value="Giriş">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </fieldset>
+<h3>Input-Veri Giriş elementleri</h3>
+<p>Uygulamalrda kullanıcılardan veri almamızı sağlarlar</p>
+
+<form action="">
+    <table>
+        <tr>
+            <td>
+                Ürün Adı
+            </td>
+            <td>
+                <input type="text" id="urunAdi" name="elementAdi" value="Bilgisayar">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ürün Fiyatı :
+            </td>
+            <td>
+                <input type="text" name="urunFiyatı" placeholder="Ürünün fiyatını giriniz">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ürün Stok :
+            </td>
+            <td>
+                <input type="number" name="urunStok" placeholder="Ürünün stoğunu giriniz">
+            </td>
+        </tr>
+        <tr>
+            <td>Ürün Kategorisi</td>
+            <td>
+                <select name="urunKategorisi" id="urunKategorisi">
+                <option value="-1">Seçiniz</option>
+                <option value="1">Bilgisayar</option>
+                <option value="2">Elektronik</option>
+                <option value="3">Telefon</option>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Ürün Açıklaması</td>
+            <td>
+                <textarea name="urunAciklamasi" id="aciklama" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Durum</td>
+            <td>
+                <input type="checkbox" id="durum" name="durum">
+                <label for="durum">Aktif</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Anasayfa</td>
+            <td>
+                <input type="radio" id="anasayfa" name="anasayfa">
+                <label for="anasayfa">Göster</label>
+                <input type="radio" id="anasayfa" name="anasayfa">
+                <label for="anasayfa">Gösterme</label>
+            </td>
+        </tr>
+    </table>
+   
+    <hr>
+    <button type="submit">Ürünü Kaydet</button>
+</form>
+<h3>Semantik Html Elementleri</h3>
+<p>
+    Html 5 ile gelen ve daha anlamlı alanlar oluşturmamızı sağlayan elementlerdir.
+</p>
+<header>
+    web sayfalarının en üst kısımlarını kodlamak için kullanılır
+    <nav>
+        sayfalarda kullanıcının bulunduğu yeri belirten navigasyon alanları için kullanılır
+    </nav>
+
+</header>
+<article>
+    sayfa içerisinde makale içerikleri kullandığımızı belirtmek için
+</article>
+<section>
+    section elementiyle sayfalarda bölümler oluşturabiliriz
+</section>
+<aside>
+    yan menüler oluşturmak için kullanılır
+    <ul>
+        <li>
+            <a href="">Anasayfa</a>
+        </li>
+        <li>
+            <a href="">Hakkımızda  </a>
+        </li>
+        <li>
+            <a href="">İletişim</a>
+        </li>
+    </ul>
+</aside>
+<figure>
+    <figcaption>Resim alanlarını çevrelemek için </figcaption>
+    <img src="Images\sut.jpg" alt="" height="100"  >
+</figure>
+
+<footer>
+    footer elementi sayfanın en alt bölümünü oluşturmak için kullanılır
+    <address>
+        Kemankeş Karamustafa Paşa Mah. <br>
+        Alipaşa Değirmeni Sok. <br>
+        No:3 34560 Karaköy / İstanbul
+
+    </address>
+</footer>
+</body>
+
+
+</html>

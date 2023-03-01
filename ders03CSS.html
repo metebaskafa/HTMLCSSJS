@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Eğitimi</title>
+    <link rel="stylesheet" href="harici.css">
+    <style>
+        body {color: dimgray;}
+       h2 {color: royalblue;}
+       ul li a {color: darkblue;}
+       ul#menu li a {color: crimson;}
+    </style>
+</head>
+<body style="color: goldenrod;">
+    <h1>CSS Eğitimi</h1>
+    <p>
+        Css ile web sayfalarımızın tasarımlarını düzenleriz
+    </p>
+    <h2>
+        Seçiciler
+    </h2>
+    <p>
+        Css ile sayfalarımızdaki elementleri belirli değerlere göre seçip kontrol edebiliriz.
+    </p>
+    <h3>En Temel Seçiciler</h3>
+    <ol id="seciciler">
+        <li>id Seçiciler: Sayfadaki elementleri id değerlerine göre seçip css uygulayabiliriz</li>
+        <li class="classSecici">class Seçiciler:Sayfadaki elementleri class değerlerine göre seçip css uygulayabiliriz </li>
+        <li class="classSecici">element seçici : :Sayfadaki elementleri element tag name değerlerine göre(div, p, h1-h6, table..) seçip css uygulayabiliriz </li>
+    </ol>
+
+    <h2>Css Nasıl Eklenir?</h2>
+    <i id="ielementi">Css kullanmanın 3 yolu vardır</i>
+    <ol style="color: rgb(23, 230, 92);">
+        <li>Harici CSS</li>
+        <li>Dahili CSS</li>
+        <li>Satır İçi(inline) CSS</li>
+    </ol>
+
+    <ul id="menu">
+        <li>
+            <a href="">Anasayfa</a>
+        </li>
+        <li>
+            <a href="">Hakkımızda</a>
+        </li>
+        <li>
+            <a href="">İletişim</a>
+        </li>
+    </ul>
+    <ul >
+        <li>
+            <a href="">Anasayfa</a>
+        </li>
+        <li>
+            <a href="">Hakkımızda</a>
+        </li>
+        <li>
+            <a href="">İletişim</a>
+        </li>
+    </ul>
+
+    <h2>CSS Kenarlık Rengi(Border)</h2>
+    <h1 style="border: 1px solid tomato">Solid düz çizgi</h1>
+    <h2 style="border: 2px dashed dodgerblue">dashed kesik çizgi</h2>
+    <h3 style=" border: 3px dotted violet">dotted noktalı çizgi </h3>
+    <h4 style=" border: 4px double red"> double çift çizgi</h4>
+    <h5 style=" border: 5px groove green"> groove geniş çizgi</h5>
+    <h6 style=" border: 5px inset rgb(49, 0, 128)"> inset içeri geçişli çizgi</h6>
+    <h6 style=" border: 5px outset rgb(0, 2, 128)"> outset dışarı geçişli çizgi</h6>
+</body>
+</html>

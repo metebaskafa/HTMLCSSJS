@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="tr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 bg-success divJs">
+                1. kutu
+            </div>
+            <div class="col-md-4 bg-primary divJs">
+                2.kutu
+            </div>
+            <div class="col-md-4 bg-warning divJs">
+                3. kutu
+            </div>
+            <div class="col-md-4 bg-success divJs">
+                1. kutu
+            </div>
+            <div class="col-md-4 bg-primary divJs">
+                2.kutu
+            </div>
+            <div class="col-md-4 bg-warning divJs">
+                3. kutu
+            </div>
+            <div class="col-md-4 bg-success divJs">
+                1. kutu
+            </div>
+            <div class="col-md-4 bg-primary divJs">
+                2.kutu
+            </div>
+            <div class="col-md-4 bg-warning divJs">
+                3. kutu
+            </div>
+            <div class="col-md-4 bg-success divJs">
+                1. kutu
+            </div>
+            <div class="col-md-4 bg-primary divJs">
+                2.kutu
+            </div>
+            <div class="col-md-4 bg-warning divJs">
+                3. kutu
+            </div>
+            <div class="col-md-4 bg-success divJs">
+                1. kutu
+            </div>
+            <div class="col-md-4 bg-primary divJs">
+                2.kutu
+            </div>
+            <div class="col-md-4 bg-warning divJs">
+                3. kutu
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+function Massage(msgText) {
+            alert(msgText)
+
+}
+
+// debugger; // kod takibi için
+var divlerim = document.getElementsByClassName("divJs"); // divjs clasına sahip olan bütün nesneler divlerim değişkenin de bir liste olarak saklandı
+// alert(divlerim.length);
+
+for (var i = 0; i < divlerim.length; i++) {
+
+            divlerim[i].innerHTML = (i + 1) + ". div";
+            if ((i + 1) == divlerim.length) {
+
+                // Calculate();
+
+            }
+}
+
+// for (var i = 0; i < divlerim.length; i++) {
+
+//   divlerim[i].innerHTML = (i+1) +" . div";
+
+// if(i==6){
+//   divlerim[i].remove();
+
+//}
+//}
+
+
+// document.write("Hello World"); // request atıp belirli başlı başlı programların çalıştığı ve response oluştuğu her işleme post back denir.
+// document.getElementById("firstDiv").innerText = "merhaba ben birinci kutuyum";
+// document.getElementById("secondDiv").innerText = "merhaba ben ikinci kutuyum";
+// document.getElementById("LastDiv").innerText = "merhaba ben üçüncü kutuyum";
+// document.getElementsByClassName("divJs")[0].innerHTML="uğurcan";
+//document.getElementsByClassName("divJs")[1].innerHTML="mete";
+//document.getElementsByClassName("divJs")[2].innerHTML="uğurcan";
+//function Calculate() {
+//  alert("Fonksiyon tetiklendi")
+//}
+
+
+
+
+    </script>
+
+    <script type="text/javascript">
+
+
+
+
+function Message(msgText) {
+            alert(msgText);
+}
+
+var divlerim = document.getElementsByClassName("divJs"); // Div JS classına sahip olan bütün nesneler divlerim değişkenin de bir liste olarak saklandı.
+
+for (var i = 0; i < divlerim.length; i++) {
+
+            divlerim[i].innerHTML = (i + 1) + ". div";
+            divlerim[i].setAttribute("onclick", "Message('" + (i + 1) + ". dive tıklandı')");
+            if (i == 0) {
+                Message("Döngü başladı");
+            }
+            if ((i + 1) == divlerim.length) {
+                Message("Döngü bitti");
+            }
+}
+
+
+    </script>
+</body>
+</html>

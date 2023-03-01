@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="bootstrap.min.css ">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+      #yukariCik{
+        position: fixed;
+        bottom: 18px;
+        right: 18px;
+        z-index: 18;
+        display: none;
+        background-color: orange;
+        color: white;
+        padding: 5px 10px;
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="mb-5">
+            <div class="row align-items-center">
+            <div class="col">
+                <a href="/Bootstrap/anasayfa.html">
+                    <img src="/Bootstrap/accush trans1.jpg" width="120px" alt="">
+                </a>
+            </div>
+           
+            <div class="col-auto">
+                info@accushtrans.com
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/Bootstrap/anasayfa.html"> <img src="/Bootstrap/accush trans.jpg" width="50px" alt=""> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/Bootstrap/anasayfa.html">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Bootstrap/hakkimizda.html">Hakkımızda</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/Bootstrap/urunlerimiz.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Faaliyet Alanlarımız
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Havayolu Taşımacılığı</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Denizyolu Taşımacılığı</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Karayolu Taşımacılığı</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="/Bootstrap/iletisim.html">İletişim</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">ARA</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+            
+        </header>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/Images/trans 1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/trans2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/Images/trans3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <section>
+            <h1 class="display-1  text-center">
+                Faaliyet Alanlarımız
+    
+            </h1>
+        <div class="row">
+            <div class="col-4 p-5">
+                
+                <img src="/Bootstrap/havayolu.jpg" alt="" class="img-fluid">
+                <h2>Havayolu Taşımacılığı</h2>
+            </div>
+            <div class="col-4 p-5">
+                
+                <img src="/Bootstrap/Denizyolu.jpg" alt="" class="img-fluid">
+                <h2>Denizyolu Taşımacığı</h2>
+            </div>
+            <div class="col-4 p-5">
+                
+                <img src="/Bootstrap/karayolu.jpg" alt="" class="img-fluid">
+                <h2>Karayolu Taşımacılığı</h2>
+            </div>
+        </div>
+        </section>
+        <footer class="row">
+        
+            <div class="col">
+                <h3>Bize Ulaşın</h3>
+                <address>
+                    Kemankeş Karamustafa Paşa Mah. <br>
+                    Alipaşa Değirmeni Sok. <br>
+                    No:3 34560 Karaköy / İstanbul
+
+                </address>
+                academy@siliconmade.com
+                <br>
+                +90 850 272 7454
+            </div>
+            <div class="col">
+                <h3>Gerekli Bağlantılar</h3>
+                <a href="/Bootstrap/anasayfa.html">Anasayfa</a>
+                <br>
+                <a href="/Bootstrap/hakkimizda.html">Hakkımızda</a>
+                <br>
+                <a href="/Bootstrap/iletisim.html">İletişim</a>
+            </div>
+            <div class="col-auto">
+                <h3>E Bülten</h3>
+                <i>Bültenimize abone olarak kampanyalarımızdan haberdar olabilirsiniz</i>
+                <form action="EBultenKayitMetodu" class="d-flex">
+                    <input type="text" name="EBulten" placeholder="E Mail Adresinizi Giriniz" class="form-control">
+                    <input type="submit" value="Kaydol" class="btn btn-primary">
+                </form>
+
+            </div>
+     
+</footer>
+    </div>
+    <a href="#" id="yukariCik">Yukarı Çık</a>
+    <script src="/Javascript/jquery-3.6.3.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+          $("#yukariCik").fadeIn()
+          
+        }
+        else $("#yukariCik").fadeOut()
+       
+      
+      })
+      $("#yukariCik").click(function (){
+          $("html, body").animate({scrollTop: 0}, 1000)
+          
+        })
+    </script>
+</body> 
+</html>

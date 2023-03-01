@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css ">
+</head>
+<body>
+    <h1>Karar-Koşul Yapıları</h1>
+    <script>
+        var sayi = -10;
+        if (sayi > 0) {
+            console.log('Sayı Pozitif : ', sayi)
+        }
+        else if(sayi < 0 ){
+            console.log('Sayı Negatif : ', sayi)
+        }
+        else console.log('sayı 0 :', sayi)
+
+    
+/* ternary operatorü (kısa if )
+eğer işlem sonucu iki seçenekten oluşuyorsa if else kullanmak yerine bu yöntemle çıktı üretebiliriz.
+*/ 
+sayi > 0 ? console.log('sayı pozitif : ', sayi) : console.log('sayı Negatif : ', sayi)
+// switch case
+switch(sayi){
+    case 10 :
+        console.log('Sayı Pozitif : ', sayi)
+        break;
+    case -10:
+        console.log('Sayı Negatif : ', sayi)
+        break;
+    default: console.log('sayı 0 :', sayi)
+        break;
+}
+let kullaniciAdi = "Admin", sifre ="1234";
+if (kullaniciAdi=="Admin" && sifre == "1234") {
+    document.write(" <div class='alert alert-succes'>Hoşgeldin " + kullaniciAdi + "</div>")
+    
+} else {
+    document.write("<div class='alert alert-danger'> Giriş Başarısız! </div>")
+    
+}
+</script>
+</body>
+</html>

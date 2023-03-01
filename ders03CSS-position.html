@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS poisition özelliği</title>
+</head>
+<body>
+    <h1>Css position özelliği</h1>
+    <p>
+        elementleri konumlandırmak için kullanılır
+    </p>
+<h2> css konumları</h2>
+    <ol>
+        <li>static konumlandırma </li>
+        <li>relative :Göreceli  </li>   
+        <li> Fixed : sabit</li>
+        <li>Absolute: Mutlak</li>
+        <li>sticky :Yapışkan</li>
+    </ol>
+
+
+<div style="position:static; ">
+style: "position:static"
+</div>
+<div style="position:relative; left: 200px; right: 100px ; bottom: 50px; top: 75px; border: 1px inset blue;">
+    style: "position:relative"
+</div>
+<div style="position:fixed; width: 200px; right: 100px ; bottom: 50px; border: 1px inset blue;">
+        style: "position:fixed" reklam banner için kullanılabilir
+</div>
+<div style="position:relative; height: 100px ; border: 1px inset blue;">
+    position:relative
+   <div style="position:absolute; width: 200px; left: 100px ; bottom: 50px; border: 1px inset blue;">
+    style: "position:absolute"
+   </div>
+    
+</div>
+<div style="position: sticky; top:0px; padding: 5px; background-color: antiquewhite ; border: 3px outset red; background-color: blue;">
+    style="position: sticky;
+   
+</div>
+<div style="height: 700px;">
+    sticky alt içerik
+</div>
+<h3> z index</h3>
+<div style="position: relative; width: 500px; height: 500px; border: 3px inset red;">
+    <div style="position: absolute; top:84px ; right: 10px; width: 200px; height: 100px; border: 1px solid yellow; background-color: blue; z-index: 3;">
+    1. position: absolute; alttaki
+    </div>
+    <div style="position: absolute; top:94px ; right: 10px; width: 200px; height: 100px; border: 1px solid yellow;
+    background-color: blue; z-index: 1;">
+     2. position: absolute; üstteki
+        </div>
+</div>
+</body>
+</html>

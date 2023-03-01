@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Giriş</title>
+</head>
+<body>
+    <h1>Javascript Giriş</h1>
+    <p>
+        Javascript tarayıcılarda çalışabilen bir programlama dilidir.
+        Javascript kodları <script></script> Taglarının arasına yazılır.
+    </p>
+    <h2>Javascript ile ekrana yazı yazdırma
+    </h2>
+    <script>
+        document.write("bu yazı Js write metoduyla yazıldı")
+        document.writeln("<h2>bu yazı Js writeln metoduyla yazıldı</h2>")
+        console.log("Bu yazı Js console.log metoduyla yazıldı. bu yazı ekrana değil tarayıcının console una yazdırılır")
+        // Javascript ile değişken tanımlama
+        var urunAdi; var urunFiyati = 18500, kdv=18; var kategori ="Bilgisayar";
+        // typescript : Microsoft tarafından geliştirilen kütüphane
+        urunAdi = "Monitör";
+        console.log('Ürün Adı : ', urunAdi)
+        console.log('Ürün Fiyatı : ', urunFiyati)
+        console.log('Ürün Kdv : ', kdv)
+        console.log('Ürün Kategori : ', +kategori)
+        
+        // let ile değişken tanımlama
+        let isim ; let soyisim; var meslek;
+        isim="Alp"; soyisim="Arslan"; meslek="Yazılımcı"
+        console.log("Kişi Bilgileri : ", isim + " " + soyisim+ "- mesleği : "+ meslek)
+
+        // javascript sabitler
+        // baştan tanımladığımız bir değerin sonradan değiştirilmemesi gerektiği durumlarda kullanılır.
+        const kdvmik=18;
+        // kdvmik =18 const ile tanımlanan değer sonradan değiştirilemez.
+        console.log('sabit değer: ', kdvmik);
+        /*
+        çoklu yorum satırı  
+        */
+    </script>
+</body>
+</html>

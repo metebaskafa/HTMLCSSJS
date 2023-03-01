@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Seçiciler</title>
+</head>
+<body>
+    <h1>Js Seçiciler</h1>
+    <p>
+        Js de DOM(document object model ) yapısı sayesinde sayfadaki tüm elementlere ulaşıp üzerinde değişiklik yapabiliriz
+    </p>
+    <h2>Elementleri Id ye göre seçme</h2>
+    <p id="mrbdny">
+        Merhaba
+    </p>
+    <p id="jsIdSeciciTest" style="border: 1px solid;">
+
+    </p>
+    <script>
+        const icerik = document.getElementById("mrbdny"); //sayfadaki idsi mrbdny olan elementi seçtik
+        document.getElementById("jsIdSeciciTest").innerText = "mrbdny elementinden gelen içerik : " + icerik.innerText
+
+    </script>
+    <h2>Elementleri Tag Name  etiket adına göre seçme</h2>
+    <div> div içeriği</div>
+    <div id="bosDiv" style="border: 1px solid;">
+
+    </div>
+    <script>
+        var divler= document.getElementsByTagName("div") //sayfadaki div elememtlerini seçtik
+        document.getElementById("bosDiv").innerText = "ilk div elementinden gelen içerik : " + divler[0].innerText
+    </script>
+    <hr>
+    <h2 class="sinifSeciciBaslik">Elementleri sınıf class name adına göre seçme</h2>
+    <div id="sinifSecici" style="border: 1px solid;">
+    </div>
+    <script>
+        var sinifaGoreSec= document.getElementsByClassName("sinifSeciciBaslik");
+        document.getElementById("sinifSecici").innerText = sinifaGoreSec[0].innerText
+
+    </script>
+    <hr>
+    <h2 class="sorguSecici"> elementleri css sorgularına göre seçme</h2>
+    <p id="sorguSecici" style="border: 1px solid;">
+
+    </p>
+    <script>
+        var sorguSecici= document.querySelectorAll("h2.sorguSecici") // quaryselectorall metotu sayfada birden çok element seçer elementleri dizi formatına getirir.
+        document.getElementById("sorguSecici").innerText = sorguSecici[0].innerText
+    </script>
+    <hr>
+    <h3>Tek Eleman Secici</h3>
+    <p id="ilkElemanİcerigi"></p>
+    <script>
+        var ilkEleman =document.querySelector("p") // quaryselector metotu sayfada bir  element seçer css sorgusu kullanarak seçim yapmamızı sağlar
+        document.querySelector("#ilkElemanİcerigi").innerHTML= ilkEleman.innerHTML
+        var tarih = new Date(); // tarih işlemleri
+        document.querySelector("#ilkElemanİcerigi").innerHTML+= "<hr>tarih :" + tarih;
+        document.querySelector("#ilkElemanİcerigi").innerHTML+= "<hr>tarih(getDate) :" + tarih.getDate();
+        document.querySelector("#ilkElemanİcerigi").innerHTML+= "<hr>tarih(getMonth) :" + (tarih.getMonth() +1);
+        document.querySelector("#ilkElemanİcerigi").innerHTML+= "<hr>tarih(getFullYear) :" + tarih.getFullYear();
+
+    </script>
+
+</body>
+</html>
