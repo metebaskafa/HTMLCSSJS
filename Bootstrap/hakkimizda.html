@@ -1,92 +1,136 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakkımızda</title>
+    <link rel="stylesheet" href="bootstrap.min.css ">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+      #yukariCik{
+        position: fixed;
+        bottom: 18px;
+        right: 18px;
+        z-index: 18;
+        display: none;
+        background-color: orange;
+        color: white;
+        padding: 5px 10px;
+      }
+    </style>
 </head>
-
 <body>
-    <table border="1">
-        <tr>
-            <td>
-                <a href="/ders02HtmlSayfa.html">
-                <img src="242303_199398.webp" alt="" width="150">
-            </a>
-            </td>
-            <td>
-                <input type="text" name="AramaKutusu" placeholder="Ara">
-            </td>
-            <td>
-                info@testsitesi.com
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <ul>
-                    <li>
-                        <a href="/ders02HtmlSayfa.html">Anasayfa</a>
-                    </li>
-                    <li>
-                        <a href="/hakkimizda.html">Hakkımızda</a>
-                    </li>
-                    <li>
-                        <a href="/urunlerimiz.html">Ürünlerimiz</a>
-                    </li>
-                    <li>
-                        <a href="/iletisim.html">İletişim</a>
-                    </li>
+    <div class="container">
+        <header class="mb-5">
+            <div class="row align-items-center">
+            <div class="col">
+                <a href="/Bootstrap/anasayfa.html">
+                    <img src="/Bootstrap/accush trans1.jpg" width="120px" alt="">
+                </a>
+            </div>
+           
+            <div class="col-auto">
+                info@accushtrans.com
+            </div>
+        </div>
 
+        <nav class="navbar navbar-expand-lg bg-body-tertiary mt-4">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/Bootstrap/anasayfa.html"> <img src="/Bootstrap/accush trans.jpg" width="50px" alt=""> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/Bootstrap/anasayfa.html">Anasayfa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Bootstrap/hakkimizda.html">Hakkımızda</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/Bootstrap/urunlerimiz.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Faaliyet Alanlarımız
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Havayolu Taşımacılığı</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Denizyolu Taşımacılığı</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/Bootstrap/urunlerimiz.html">Karayolu Taşımacılığı</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="/Bootstrap/iletisim.html">İletişim</a>
+                  </li>
                 </ul>
-            </td>
-            <td colspan="2">
-                <h1>Hakkımızda </h1>
-                <div>
-                    Bugün birçok eğitim kurumu, eğitim (training) değil, müfredata dayalı standart öğretim (teaching)
-                    kurumudur. Öğretim modelinde halen “baskın öğretmen-bağımlı öğrenci” ilişki modeli devam ederken,
-                    içeriğine müdahale edilemeyen ve blok şeklinde sunulan ders programları çoğunlukla yalnızca tek
-                    yönlü bilgi aktarımı şeklindedir. Garantici ve uygulama kolaylığı olan bu model kötüdür
-                    diyemeyiz belki ama bu modelin neyi garantiye aldığının ve kime kolaylık sağladığın altını çizmek
-                    lazım. Öğrenci olmadığı kesin…
-                </div>
-            </td>
-
-        </tr>
-        <tr>
-            <td>
-                <h3>Bize Ulaşın</h3>
-                <address>
-                    Kemankeş Karamustafa Paşa Mah. <br>
-                    Alipaşa Değirmeni Sok. <br>
-                    No:3 34560 Karaköy / İstanbul
-
-                </address>
-                academy@siliconmade.com
-                <br>
-                +90 850 272 7454
-            </td>
-            <td>
-                <h3>Gerekli Bağlantılar</h3>
-                <a href="/ders02HtmlSayfa.html">Anasayfa</a>
-                <br>
-                <a href="/hakkimizda.html">Hakkımızda</a>
-                <br>
-                <a href="iletisim.html">İletişim</a>
-            </td>
-            <td>
-                <h3>E Bülten</h3>
-                <i>Bültenimize abone olarak kampanyalarımızdan haberdar olabilirsiniz</i>
-                <form action="EBultenKayitMetodu">
-                    <input type="text" name="EBulten" placeholder="E Mail Adresinizi Giriniz">
-                    <input type="submit" value="Kaydol">
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Ara" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">ARA</button>
                 </form>
+              </div>
+            </div>
+          </nav>
 
-            </td>
-        </tr>
-    </table>
+            
+        </header>
+        <div>
+            <img src="/Bootstrap/hakkımızda.banner.jpg" width="100%" alt="">
+            <hr>
+            <p class="">Bizim firmamız, karayolu, denizyolu ve havayolu taşımacılığı hizmetleri sunan bir lojistik şirketidir. Müşterilerimize en yüksek kalitede hizmet sunmak için uzman bir ekiple çalışıyoruz. Firmamızın amacı, müşterilerimizin ihtiyaçlarını en iyi şekilde karşılamak ve lojistik süreçlerinde müşteri memnuniyetini en üst seviyede tutmaktır. Bu amaç doğrultusunda, özel taleplere ve ihtiyaçlara göre çözümler sunuyoruz.Karayolu taşımacılığı alanında geniş bir filoya sahibiz ve tüm Türkiye genelinde hizmet veriyoruz. Denizyolu taşımacılığı alanında ise dünya genelinde birçok limana ve rotaya hizmet vermekteyiz. Havayolu taşımacılığı alanında da, dünya genelindeki tüm havalimanlarına hizmet sunuyoruz. Müşteri memnuniyetini her zaman önceliğimiz olarak belirleyen bir firma olarak, hizmetlerimizi en uygun fiyatlarla sunarak müşterilerimizin güvenini kazanıyoruz. İşimizi ciddiyetle ve titizlikle yapıyoruz ve müşterilerimize en hızlı, güvenilir ve kaliteli hizmeti sunmak için çalışıyoruz.</p>
+                <hr>
+        </div>
+    </section>
+    <footer class="row">
+    
+        <div class="col">
+            <h3>Bize Ulaşın</h3>
+            <address>
+                Kemankeş Karamustafa Paşa Mah. <br>
+                Alipaşa Değirmeni Sok. <br>
+                No:3 34560 Karaköy / İstanbul
 
+            </address>
+            academy@siliconmade.com
+            <br>
+            +90 850 272 7454
+        </div>
+        <div class="col">
+            <h3>Gerekli Bağlantılar</h3>
+            <a href="/Bootstrap/anasayfa.html">Anasayfa</a>
+            <br>
+            <a href="/Bootstrap/hakkimizda.html">Hakkımızda</a>
+            <br>
+            <a href="/Bootstrap/iletisim.html">İletişim</a>
+        </div>
+        <div class="col-auto">
+            <h3>E Bülten</h3>
+            <i>Bültenimize abone olarak kampanyalarımızdan haberdar olabilirsiniz</i>
+            <form action="EBultenKayitMetodu" class="d-flex">
+                <input type="text" name="EBulten" placeholder="E Mail Adresinizi Giriniz" class="form-control">
+                <input type="submit" value="Kaydol" class="btn btn-primary">
+            </form>
+
+        </div>
+ 
+</footer>
+</div>
+<a href="#" id="yukariCik">Yukarı Çık</a>
+<script src="/Javascript/jquery-3.6.3.min.js"></script>
+<script>
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 100) {
+      $("#yukariCik").fadeIn()
+      
+    }
+    else $("#yukariCik").fadeOut()
+   
+  
+  })
+  $("#yukariCik").click(function (){
+      $("html, body").animate({scrollTop: 0}, 1000)
+      
+    })
+</script>
 </body>
-
-</html>

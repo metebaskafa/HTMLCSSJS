@@ -62,16 +62,16 @@
 
 
     <script type="text/javascript">
-function Massage(msgText) {
+        function Massage(msgText) {
             alert(msgText)
 
-}
+        }
 
-// debugger; // kod takibi için
-var divlerim = document.getElementsByClassName("divJs"); // divjs clasına sahip olan bütün nesneler divlerim değişkenin de bir liste olarak saklandı
-// alert(divlerim.length);
+        // debugger; // kod takibi için
+        var divlerim = document.getElementsByClassName("divJs"); // divjs clasına sahip olan bütün nesneler divlerim değişkenin de bir liste olarak saklandı
+        // alert(divlerim.length);
 
-for (var i = 0; i < divlerim.length; i++) {
+        for (var i = 0; i < divlerim.length; i++) {
 
             divlerim[i].innerHTML = (i + 1) + ". div";
             if ((i + 1) == divlerim.length) {
@@ -79,29 +79,29 @@ for (var i = 0; i < divlerim.length; i++) {
                 // Calculate();
 
             }
-}
+        }
 
-// for (var i = 0; i < divlerim.length; i++) {
+        // for (var i = 0; i < divlerim.length; i++) {
 
-//   divlerim[i].innerHTML = (i+1) +" . div";
+        //   divlerim[i].innerHTML = (i+1) +" . div";
 
-// if(i==6){
-//   divlerim[i].remove();
+        // if(i==6){
+        //   divlerim[i].remove();
 
-//}
-//}
+        //}
+        //}
 
 
-// document.write("Hello World"); // request atıp belirli başlı başlı programların çalıştığı ve response oluştuğu her işleme post back denir.
-// document.getElementById("firstDiv").innerText = "merhaba ben birinci kutuyum";
-// document.getElementById("secondDiv").innerText = "merhaba ben ikinci kutuyum";
-// document.getElementById("LastDiv").innerText = "merhaba ben üçüncü kutuyum";
-// document.getElementsByClassName("divJs")[0].innerHTML="uğurcan";
-//document.getElementsByClassName("divJs")[1].innerHTML="mete";
-//document.getElementsByClassName("divJs")[2].innerHTML="uğurcan";
-//function Calculate() {
-//  alert("Fonksiyon tetiklendi")
-//}
+        // document.write("Hello World"); // request atıp belirli başlı başlı programların çalıştığı ve response oluştuğu her işleme post back denir.
+        // document.getElementById("firstDiv").innerText = "merhaba ben birinci kutuyum";
+        // document.getElementById("secondDiv").innerText = "merhaba ben ikinci kutuyum";
+        // document.getElementById("LastDiv").innerText = "merhaba ben üçüncü kutuyum";
+        // document.getElementsByClassName("divJs")[0].innerHTML="uğurcan";
+        //document.getElementsByClassName("divJs")[1].innerHTML="mete";
+        //document.getElementsByClassName("divJs")[2].innerHTML="uğurcan";
+        //function Calculate() {
+        //  alert("Fonksiyon tetiklendi")
+        //}
 
 
 
@@ -113,13 +113,13 @@ for (var i = 0; i < divlerim.length; i++) {
 
 
 
-function Message(msgText) {
+        function Message(msgText) {
             alert(msgText);
-}
+        }
 
-var divlerim = document.getElementsByClassName("divJs"); // Div JS classına sahip olan bütün nesneler divlerim değişkenin de bir liste olarak saklandı.
+        var divlerim = document.getElementsByClassName("divJs"); // Div JS classına sahip olan bütün nesneler divlerim değişkenin de bir liste olarak saklandı.
 
-for (var i = 0; i < divlerim.length; i++) {
+        for (var i = 0; i < divlerim.length; i++) {
 
             divlerim[i].innerHTML = (i + 1) + ". div";
             divlerim[i].setAttribute("onclick", "Message('" + (i + 1) + ". dive tıklandı')");
@@ -129,9 +129,12 @@ for (var i = 0; i < divlerim.length; i++) {
             if ((i + 1) == divlerim.length) {
                 Message("Döngü bitti");
             }
-}
+        }
 
 
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    cr
 </body>
 </html>
